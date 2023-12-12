@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" dir="lyr">
+    <head>
+        <meta charset="utf-8">
+        <title>Oasis Hotel & Resort</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/home.css">
+        <link rel="icon" href="logotab/tablogo.png">
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <section id="bannerbk">
+            <nav id="upper">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="menu-icon">&#9776</i>
+                </label>
+                <img src="logo/whitenormal.png" alt="logo" height="100px" width="100px">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Braches.html">Branches</a></li>
+                    <li><a href="Adventures.html">Adventures</a></li>
+                    <li><a href="Resturents.html">Restaurants</a></li>
+                    <li><a class="active" href="Bookings.html">Bookings</a></li>
+                </ul>
+            </nav>
+            <div class="hometext">
+                <h3>Oasis</h3>
+                <h1>Bookings</h1>
+                <div class="hometextbtn">
+                    <a href="#ex"><span>Accommodations</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!--Inpage quicklink-->
+        <div id="ex"></div>
+        <!--Inpage quicklink-->
+
+        <section id="booking">
+            <div class="booking-text">
+                <p>--Accommodations--</p>
+                <h1>Bookings</h1><br>
+                <h2>-Rooms-</h2>
+            </div>
+            <table class="tablebr">
+                <caption>
+                    <h1>Rooms Summary</h1><br>
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Discription</th>
+                        <th>Price </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Singel Bed</th>
+                        <td>Step into a haven of simplicity and comfort with our single room. Enjoy a cozy retreat featuring a comfortable bed, a functional workspace, and modern amenities. Whether you're here for business or leisure, our thoughtfully designed space ensures a pleasant stay for the solo traveler.</td>
+                        <td>25,000.00(LKR)</td>
+                    </tr>
+                    <tr>
+                        <td>Double Bed</td>
+                        <td>Step into comfort and companionship in our double room—a perfect space for couples or travel partners. Enjoy a restful night on a luxurious double bed, surrounded by modern amenities and thoughtful design. Embrace the coziness of shared moments in this inviting retreat.</td>
+                        <td>35,000.00(LKR)</td>
+                    </tr>
+                    <tr>
+                        <td>Thriple Bed</td>
+                        <td>Discover comfort and camaraderie in our triple bed room—a welcoming space designed for groups or families. Enjoy the convenience of three cozy beds, each adorned with soft linens, promising a restful night's sleep for everyone. With a modern aesthetic and functional design, this room ensures a comfortable stay for your party. Create lasting memories in this inviting retreat, tailored for shared experiences.</td>
+                        <td>40,000.00(LKR)</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Kids above 5 years of age cost 5000.00(LKR) extra for meals</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Extra Bed cost 8000.00(LKR)</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <section class="input">
+                <div class="title">Contact Info</div>
+                <form action="#">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">First Name</span>
+                            <input type="text" id="firstName" placeholder="Enter your first name">
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Last Name</span>
+                            <input type="text" id="lastName" placeholder="Enter your last name">
+                        </div>
+                        <div class="input-box">
+                            <span class="details">ID OR Passport Number</span>
+                            <input type="text" id="idNum" placeholder="Enter your ID or Passport number" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">E-mail</span>
+                            <input type="email" id="emailId" placeholder="Enter your e-mail" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Phone Number</span>
+                            <input type="number" id="phoneNumber" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Enter Promo Code</span>
+                            <input type="text" id="promoCode" placeholder="5% Discount From The Total Bill" required>
+                        </div>
+                    </div>
+                </form>
+                <div class="title">Booking Info</div>
+                <form action="#">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">Check-In Date</span>
+                            <input type="date" id="inDate" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Check-Out Date</span>
+                            <input type="date" id="outDate" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">No of Children Below age 5</span>
+                            <input type="number" id="noKidBe" value="0" placeholder="No of Children Below age 5" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">No of Children Above age 5</span>
+                            <input type="number" id="noKidAb" value="0" placeholder="No of Children Above age 5" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">No of Adults</span>
+                            <input type="number" id="noAdults" value="0" placeholder="No of Adults" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Singel Rooms</span>
+                            <input type="number" id="noSingel" value="0" placeholder="No of Singel Rooms" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Double Rooms</span>
+                            <input type="number" id="noDouble" value="0" placeholder="No of Double Rooms" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Thriple Rooms</span>
+                            <input type="number" id="noThriple" value="0" placeholder="No of Thriple Rooms" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Extra Beds</span>
+                            <input type="number" id="extraBeds" value="0" placeholder="No of Extra Beds" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Extra Requirements</span>
+                            <select class="dropdownlist" name="list" size="1" required>
+                                <option id="pool">Wifi + Pool View</option>
+                                <option id="garden">Wifi + Garden View</option>
+                            </select>
+                        </div>
+                        <div class="outRoombox">
+                            <legend>Current<br> Bookings</legend>
+                            <b><p id="outputRoomcurrent"></p></b>
+                        </div>
+                        <div class="outRoombox">
+                            <legend>Loyalty Points</legend>
+                            <b><p id="outputRoomloyal"></p></b>
+                        </div>
+                        <div class="outRoombox">        
+                            <legend>Overall<br> Bookings</legend>
+                            <b><p id="outputRoomover"></p></b>
+                        </div>  
+                    </div>
+                    <div class="book_btn1">
+                        <input type="button" id="bookRooms" value="Book Now">
+                    </div>
+                    <div class="book_btn2">
+                        <input type="submit" id="addFavouritesroom" value="Add to Favourites">
+                    </div>
+                    <div class="book_btn3">
+                        <input type="button" id="checkloyal" value="Check Loyalty Points">
+                    </div>
+                </form>
+            </section>
+            <div class="advbooking">
+            </div>
+            <table class="tablebr">
+                <caption>
+                    <h1>Adventures Summary</h1><br>
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Adventures</th>
+                        <th>Cost</th>
+                        <th>Guide Options </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Surfing</td>
+                        <td>Local Adults : 5000.00(LKR) <br>
+                            Local Kids (Above 5 years) : 2000.00(LKR)<br><br>
+                            Foreign Adult : 10000.00(LKR)<br>
+                            Foreign Kids : 5000.00(LKR)
+                        </td>
+                        <td>Adults : 1000.00(LKR) Extra will be Charged<br>
+                            Kids : 500.00(LKR) Extra will be Charged
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Scuba Diving</td>
+                        <td>Local Adults : 5000.00(LKR) <br>
+                            Local Kids (Above 5 years) : 2000.00(LKR)<br><br>
+                            Foreign Adult : 10000.00(LKR)<br>
+                            Foreign Kids : 5000.00(LKR)</td>
+                        <td>
+                            Adults : 1000.00(LKR) Extra will be Charged<br>
+                            Kids : 500.00(LKR) Extra will be Charged
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Turtle Hatchery</td>
+                        <td>Local Adults : 5000.00(LKR) <br>
+                            Local Kids (Above 5 years) : 2000.00(LKR)<br><br>
+                            Foreign Adult : 10000.00(LKR)<br>
+                            Foreign Kids : 5000.00(LKR)</td>
+                        <td>Adults : 1000.00(LKR) Extra will be Charged<br>
+                            Kids : 500.00(LKR) Extra will be Charged</td></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Experience the Oasis</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <section class="input">
+                <div class="title">Booking Info</div>
+                <form action="#">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">First Name</span>
+                            <input type="text" id="firstName1" placeholder="Enter your first name">
+                        </div>
+                        <div class="input-box">
+                            <span class="details">No. of Children</span>
+                            <input type="number" id="noKid" value="0" placeholder="Number of Children" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">No. of Children (Foreign)</span>
+                            <input type="number" id="noKidfor" value="0" placeholder="Number of Children" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">No. of Adults</span>
+                            <input type="number" id="noAdult" value="0" placeholder="Number of Adults" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">No. of Adults (Foreign)</span>
+                            <input type="number" id="noAdultfor" value="0"1 placeholder="Number of Adults" required>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">No. of hours</span>
+                            <input type="number" id="hour" value="0"1 placeholder="Number of hours" required>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Adventures</span>
+                            <select class="dropdownlist" name="list" size="1"  id="advType" required>
+                                <option id="surfing">Surfing</option>
+                                <option id="scubadiving">Scuba Diving</option>
+                                <option id="turtel">Turtle Hatchery</option>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Guide</span>
+                            <select class="dropdownlist" name="list" size="1" required id="guide">
+                                <option id="noGuide">No Guide</option>
+                                <option id="kids">For-Kids</option>
+                                <option id="adult">For-Adults</option>
+                                <option id="both">For-Adults & Kids</option>
+                            </select>
+                        </div>
+                        <div class="outRoombox">
+                            <legend>Adventures <br> Bookings</legend>
+                            <b><p id="outputAdvbooking"></p></b>
+                        </div>
+                        <div class="outRoombox">
+                            <legend>Overall Adventure<br> Bookings</legend>
+                            <b><p id="overallAdv"></p></b>
+                        </div>
+                        <div class="outRoombox">
+                            <legend>Total Bill</legend>
+                            <b><p id="outputTotalbooking"></p></b>
+                        </div>
+                    </div>                   
+                </form>
+                <div class="book_btn1">
+                    <input type="submit" id="bookAdventures" value="Book Adventures">
+                </div> 
+                <div class="book_btn2">
+                    <input type="submit" id="addFavouritesadv" value="Add to Favourites">
+                </div>
+                <div class="book_btn3">
+                    <input type="submit" id="totalBill" value="Total Bill">
+                </div>
+            </section>
+        </section><br><br>
+        <section id="footer">
+            <div class="footer-text">
+                <p>--CONTACT--</p>
+                <h1>Visit Us Today</h1>
+            </div>
+            <div class="footer-row">
+                <div class="footer-left">
+                    <h1>Open Hours</h1>
+                    <p>Bentota Branch  8.00(a.m)-12.00(p.m)</p>
+                    <p>Pasikuda Branch  8.00(a.m)-12.00(p.m)</p>
+                    <p>Nilaveli Branch  8.00(a.m)-12.00(p.m)</p>
+                </div>
+                <div class="footer-right">
+                    <h1>Get In Touch</h1>
+                    <p>399/3,Kings Road,Bentota</p>
+                    <P>oasis@gmail.com</P>
+                    <p>011-2346829</p><br>
+                </div>
+            </div><br><br>
+            <div class="copright">
+                <span>&copy 2023 The Hotel Oasis by Pawan Pinsara, All rights reserved.</span>
+            </div>
+            <!--
+
+            References
+
+            banner image- Riccardo (2017) Trees near sea · Free stock photo, Pexels. Available at: https://www.pexels.com/photo/trees-near-sea-573850/.
+            
+            -->
+        </section>
+    </body>
+</html>
